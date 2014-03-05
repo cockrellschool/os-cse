@@ -1,0 +1,45 @@
+/* Lt Blue version */
+body, 
+body.navbar-off {
+   border-top: 10px solid #3a3a3a;
+   background: #bbbbbb;
+	background-image: url(../../images/graybar.png); /* fallback */
+	background-image: url(../../images/graybar.png), -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+	background-image: url(../../images/graybar.png), -webkit-linear-gradient(top, #e8e8e8, #bbbbbb); /* Chrome 10+, Saf5.1+ */
+	background-image: url(../../images/graybar.png),    -moz-linear-gradient(top, #e8e8e8, #bbbbbb); /* FF3.6+ */
+	background-image: url(../../images/graybar.png),     -ms-linear-gradient(top, #e8e8e8, #bbbbbb); /* IE10 */
+	background-image: url(../../images/graybar.png),      -o-linear-gradient(top, #e8e8e8, #bbbbbb); /* Opera 11.10+ */
+	background-image: url(../../images/graybar.png),         linear-gradient(top, #e8e8e8, #bbbbbb);
+	background-repeat: repeat-x;
+}
+
+
+.menu a.active, .menu a:hover.active, ul.nice-menu a.active, ul.nice-menu a:hover.active, .navigation ul.menu li ul.menu li a.active, .navigation ul li ul li a.active, .block-boxes-os_boxes_booktoc ul.menu li a.active {
+	background: #3a3a3a;
+}
+.menu a:hover, ul.nice-menu a:hover {
+color: #696969;
+}
+.menu a:link,
+.menu a:visited{
+	color: #3a3a3a;
+}
+.menu a.active{
+	color: white;
+}
+
+.block-boxes-os_boxes_site_info h1 {
+	color:#3a3a3a;
+}
+.block-boxes-os_boxes_site_info h1 a, .block-boxes-os_boxes_site_info h1 a:visited {
+	color:#3a3a3a;
+  }
+#content-main .view-id-scholar_presentations .views-row a, #content-main #boxes-box-scholar_publications_recent .views-row a, #content-main .view-scholar-events-upcoming .views-row a {
+	color:#3a3a3a;
+}
+
+.ut-logo{
+	background: url(../../images/utlogo_white.png) no-repeat
+}
+
+

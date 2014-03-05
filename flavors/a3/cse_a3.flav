@@ -1,0 +1,5 @@
+name = Template A Gray
+description = An Lt Blue Version of the Template A theme
+screenshot = screenshot.png
+
+css[] = a3.css

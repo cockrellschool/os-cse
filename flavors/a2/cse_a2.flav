@@ -1,0 +1,5 @@
+name = Template A Orange
+description = An Orange Version of the Template A theme
+screenshot = screenshot.png
+
+css[] = a2.css

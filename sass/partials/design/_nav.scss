@@ -1,0 +1,162 @@
+
+.region-sidebar-first {
+  padding-left:0;
+  padding-right: .5em;
+
+  
+  @include breakpoint($tablet-break) { 
+    padding-left:.5em;
+    padding-right: 0;
+
+  }
+}
+
+
+.sidebar .menu li {
+  float: none;
+  border: none;
+  border-top: 1px solid #D8D6D6;
+  display: block;
+}
+
+.sidebar .menu li:first-of-type {
+  border-top: none;
+}
+
+// Primary Menu
+.nice-menu a,
+.nice-menu a:visited,
+.menu a,
+.menu a:visited {
+  font-style: normal;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Calibri, Lucida Grande, Sans Serif;
+  font-size: 1.3em;
+} 
+
+.nice-menu li,
+.menu li {
+  font-size: 1em;
+  line-height: 34px;
+  font-weight: bold;
+  float: none !important;
+  border-right: 1px solid #D8D6D6;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.menu a:hover {
+  color: #007bc4;
+}
+
+
+.menu a.active,
+.menu a:hover.active,
+ul.nice-menu a.active,
+ul.nice-menu a:hover.active,
+.navigation ul.menu li ul.menu li a.active,
+.navigation ul li ul li a.active,
+.block-boxes-os_boxes_booktoc ul.menu li a.active {
+  background: #007bc4;
+  color: #fff;
+}
+
+
+// ul.nice-menu a {
+//   color: #306696;
+// }
+
+
+// ul.nice-menu a:hover {
+//   color: #13a3eb;
+// }
+
+
+// ul.nice-menu-down {
+//   float: none !important;
+// }
+
+.block-title {
+  color: $orange;
+}
+
+
+// Booklet TOC Menu
+
+.book-menu ul.menu li a,
+#block-book-navigation ul.menu li a,
+.block-boxes-os_boxes_booktoc ul.menu li a,
+.sidebar .menu a {
+  padding: 14px 4px 14px 15px;
+  line-height: 17px;
+}
+
+#block-boxes-os-booktoc div ul li a{
+    margin-bottom: 1em;
+    margin:0;
+    padding: 0;
+    padding-bottom: .75em;
+
+    font-size: 1.1em;
+    background: none;
+    color:$orange;
+    font-family: $headerfont;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+
+}
+
+#block-boxes-os-booktoc div ul li a:active{
+    font-style: normal;
+    font-weight: normal;
+}
+
+#block-boxes-os-booktoc div ul li ul li a{
+    margin: .5em 0;
+    color:#306696;
+    font-family: $basefont;
+    text-transform: none;
+    line-height: 1.25;
+    font-size: 1em;
+
+    padding-bottom: .25em;
+    font-weight: normal;
+}
+
+#block-boxes-os-booktoc div ul li ul li a:active{
+      // font-style: italic;
+      // font-weight: bold;
+}
+
+
+// Nav Icon for mobile
+.navicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:18px;
+  height: 18px;
+  
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 1.3rem;
+  margin: .5rem;
+  padding: 7px 7px 5px 7px;
+  background-color: #3d97d3;
+  border-right: 1px solid #297cb4;
+  border-bottom: 1px solid #297cb4;
+  display: block;
+  
+  @include breakpoint($mobile-break) {  
+    display: none;
+  }
+}
+
+
+

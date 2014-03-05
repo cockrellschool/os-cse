@@ -1,0 +1,162 @@
+// HEADER
+
+#header {
+  font-family: $headerfont;
+  font-weight: normal;
+  background:none;
+
+}
+#header p {
+	font-size:1em;
+
+	@include breakpoint($tablet-break) {  
+		font-size: 1.3em;
+	}
+}
+#header-panels {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #c7c7c8;
+}
+
+.header-left.header-main.header-right .region-header-first, .header-left.header-main .region-header-first {
+	margin-left: 0; 
+}
+
+#header-container .gpanel .region {
+	clear: none;
+	display: inline-block;
+	vertical-align: bottom;
+} 
+
+
+// UT Logo
+.ut-logo{
+	width: 100px;
+	height: 50px;
+	float: right;
+	margin-top: -60px;
+	background-repeat: no-repeat;
+	display:none;
+
+	@include breakpoint($tablet-break) {  
+		display: block;
+		background: url(../images/utlogo.png) no-repeat
+	}
+}
+
+
+// Department Banner
+
+.region-header-third{
+	display: none;
+	
+	  @include breakpoint($tablet-break) {  
+		display: block;
+		position: absolute;
+		top: -70px;
+		left: -40px;
+		width: 600px;
+		height: 75px;
+	}
+
+}
+
+#scholar-shield {	
+	display:none;
+	text-align: left;
+	width: auto;
+
+	@include breakpoint($tablet-break) {
+		display: block;
+		margin-left: 4.3em;
+	}
+	@include breakpoint($desktop-break) {
+		display: block;
+		margin-left: 3em;
+	}
+}
+
+
+// Logo / Faculty Pic (this should be in .region.region-header-first)
+
+#header-container #header-panels .region.region-header-first{
+	display:none;
+
+	@include breakpoint($tablet-break) {
+		display: inline-block;
+	}
+}
+
+#boxes-box-site_logo img{
+	width:180px;
+}
+
+
+// Site Info (this should be in .region.region-header-second)
+
+.region-header-second{
+	width:100%;
+}
+
+#header-panels .region-header-second .region-inner{
+	padding-top: 0;
+}
+
+.region-header-second #block-os-primary-menu {
+	max-width:700px;
+}
+
+.region.region-header-second{
+	width:100%;
+	margin-left: .5em;
+
+	@include breakpoint($tablet-break) {  
+		width:70%;
+		margin-left: 0;
+	}
+	@include breakpoint($desktop-break) {  
+		width:70%;
+		margin-left: 1em;
+	}
+}
+
+
+.block-boxes-os_boxes_site_info{
+
+	 h1 {
+	  margin-top: .85em;
+	  line-height:1em;
+	  font-style: normal;
+	  font-family: $headerfont;
+	  font-size: 2em;
+
+	  @include breakpoint($tablet-break) {  
+		font-size: 2.5em;
+		}
+	}
+
+	h1 a, .block-boxes-os_boxes_site_info h1 a:visited {
+		font-weight: bold;
+		color: $orange;
+	}
+
+	h2 {
+	  line-height:1.3em;
+	  font-family: $basefont;
+	  // margin-top: .25em;
+	  font-size: 1.25em;
+
+	  font-size: 1em;
+		@include breakpoint($tablet-break) {  
+			 font-size: 1.6em;
+		}
+	}
+
+}
+
+#boxes-box-site_info {
+	margin-left: -10px;
+}
+
+
+

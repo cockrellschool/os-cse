@@ -1,0 +1,21 @@
+
+
+// overwrite cse.responsive.layout.css to prevent title from jumping up in tablet view
+@media only screen and (min-width:$tablet-break) and (max-width:$desktop-break) {
+	.at-panel .region {  
+		float:none !important;
+	}
+}
+
+// overwrite cse.responsive.layout.css to fix left nav width in tablet view
+@media only screen and (min-width:769px) and (max-width:1024px) {
+  .region.region-sidebar-first {
+    width: 18%; 
+  }
+}
+
+// overwrite cse.responsive.layout.css to add margin to right column
+@media only screen and (min-width:1025px) {
+	.region.region-sidebar-second {width: 190px;}
+
+}

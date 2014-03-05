@@ -1,0 +1,398 @@
+// // BUTTONS
+
+.clickable{
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+// .btn{
+// 	position: relative;
+// 	padding: .54rem 0;
+// 	height:2rem;
+// 	border:none;
+// 	color:#fff;
+// 	font-size: .9rem; 
+// 	font-weight: 300;
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	-moz-border-radius: $border-radius;
+// 	border-radius: $border-radius;
+// 	overflow:hidden;
+// 	text-decoration:none;
+// 	line-height: 1rem;
+// }
+// .btn.active,{
+// 	color: white;
+// }
+// .btn.disabled{
+// 	color: white;
+// }
+
+// .btn-text{
+// 	padding-left:0;
+// 	display:none;
+// }
+// .btn-text a:link,
+// .btn-text a:active,
+// .btn-text a:visited{
+// 	text-decoration: none;
+// 	color:white;
+// }
+// @include breakpoint($mobile-break) { 
+// 	.btn-text{
+// 		padding-left:1.9rem;
+// 		display:block;
+// 		display:inherit;
+// 	}
+// }
+
+// // close
+
+// .close{
+// 	position: absolute;
+// 	top:.0;
+// 	right:.5rem;
+// 	height:3rem;
+// }
+// // submit
+
+
+// .submit, .next{
+// 	display: inline-block;
+// 	width:100%;
+// 	border:none;
+	
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);	
+
+// 	font-size: 1.2rem;
+// 	height: 3rem;
+// 	padding: 1rem;
+// 	margin: .5rem auto;
+
+// 	clear:both;
+
+// 	@include breakpoint($mobile-break){	
+// 		width: 120px;
+// 		padding:inherit;
+// 		// margin:25px auto;
+// 		padding: .54rem 0;
+// 		height: 2rem;
+// 		font-size: .9rem; 
+// 	}
+// }
+
+	
+
+// // @include breakpoint($mobile-break) { 
+// // 	padding:inherit;
+// // 	width: 130px;
+// // 	margin:25px auto;
+// // 	padding: .54rem 0;
+// // 	height: 2rem;
+// // 	font-size: .9rem; 
+// // }
+
+
+// // add job button
+
+// .add-job{
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);
+
+// 	@include breakpoint($mobile-break) { 
+// 	    width: 115px;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($blue,10);
+// 	}
+// }
+// .add-job:hover{
+// 	@include hover($blue);  
+// 	.icon{ @include hover(darken($blue,10))}
+// }
+
+// // approve button
+
+// .approve{
+// 	background-color: $green;
+// 	width: 115px;
+
+// 	@include extrude($green,1px);
+
+// 	.btn-text{
+// 		padding-left:1.9rem;
+// 		display:block;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($green,10);
+// 	}
+// }
+// .approve:hover{
+// 	@include hover($green);  
+// 	.icon{ @include hover(darken($green,10))}
+// }
+
+
+// // stop button
+
+// .stop{
+// 	width: 100px;
+
+// 	background-color: $red;
+// 	@include extrude($red,1px);
+
+// 	.btn-text{
+// 		padding-left:1.9rem;
+// 		display:block;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($red,10);
+// 	}
+// }
+
+// .cancel,.remove{
+// 	background-color: $red;
+// 	@include extrude($red,1px);
+
+// 	@include breakpoint($mobile-break) { 
+// 	    width: 105px;
+// 	}
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($red,10);
+// 	}
+// }
+
+// .confirm{
+// 	background-color: $red;
+// 	@include extrude($red,1px);
+
+// 	@include breakpoint($tablet-break) { 
+// 	    width: 115px;
+// 	}
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($red,10);
+// 	}
+// }
+// .cancel:hover,.confirm:hover, .remove:hover, .stop:hover,
+// .cancel:active,.confirm:active, remove:active, .stop:active{
+// 	@include hover($red);  
+// 	.icon{ @include hover(darken($red,10));}
+// }
+
+
+// // delete this job button
+
+// .delete-job{
+// 	width: 130px;
+
+// 	background-color: $red;
+// 	@include extrude($red,1px);
+	
+// 	.btn-text{
+// 		padding-left:1.9rem;
+// 		display:block;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($red,10);
+// 	}
+// }
+// .delete-job:hover,
+// .delete-job:active{
+// 	@include hover($red);  
+// 	.icon{ @include hover(darken($red,10));}
+// }
+
+
+// // pause button
+
+// .pause{
+// 	width: 107px;
+
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);
+
+// 	.btn-text{
+// 		padding-left:1.9rem;
+// 		display:block;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($blue,10);
+// 	}
+// }
+// .pause:hover,
+// .pause:active{
+// 	@include hover($blue);  
+// 	.icon{ @include hover(darken($blue,10));} 
+// }
+
+
+// // login
+
+// .welcome .sign-in-long{
+// 	display: none;
+
+// 	@include breakpoint($tablet-break) { 
+//  		display: inherit;
+// 	}
+// }
+
+// .center{
+// 	margin:0 auto;
+// }
+
+// .sign-in-short{
+// 	display:block;
+// 	margin:0 auto;
+// 	margin-top:.5rem;
+// 	width:100px;
+// 	height: 3rem;
+// 	padding: 1rem;
+// 	width: 170px;
+	
+// 	background-color: $green;
+// 	@include extrude($green,1px);
+// 	position: relative;
+// 	font-size: 1.2rem;
+
+// 	@include breakpoint($tablet-break) { 
+// 	    display: none ;
+// 	}
+
+// }
+
+// .welcome .sign-in-short{
+// 	@include breakpoint($tablet-break) { 
+// 	    display: none ;
+// 	}
+// }
+
+// .go{
+
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);
+
+// 	width:100%;
+// 	// border:none;
+
+// 	font-size: 1.2rem;
+// 	height: 3rem;
+// 	padding: 1rem;
+// 	margin: .5rem auto;
+
+// 	clear:both;
+
+// 	@include breakpoint($mobile-break) { 
+// 		display: inline-block;
+// 		width: 50px;
+// 		height: 2rem;
+// 		margin-top: .25rem;
+// 		padding: .5rem;
+// 		font-size: .9rem;
+// 		background-color: $green;
+// 		@include extrude($green,1px);
+// 	}
+// }
+
+// .login:hover,
+// .go:hover{
+// 	@include hover($blue); 
+// 	@include breakpoint($mobile-break) { 
+// 		@include hover($green); 	
+// 	} 
+// }
+// input.btn{	padding:0; } // submit button fix
+
+
+// // download button
+
+// .download{
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);
+
+// 	@include breakpoint($tablet-break) { 
+// 	    width: 130px;
+// 	}
+
+// 	.icon{
+// 		@extend %btn-icon;
+// 		background-color: darken($blue,10);
+// 	}
+// }
+// .download:hover{
+// 	@include hover($blue);  
+// 	.icon-download{ @include hover(darken($blue,10))}
+// }
+
+
+
+// // read more button
+
+// .read-more{
+// 	height: 3rem;
+// 	padding: 1rem;
+// 	width: 170px;
+// 	margin: 1rem auto;
+
+// 	background-color: $blue;
+// 	@include extrude($blue,1px);
+// 	text-transform: uppercase;
+// 	font-size: 1.2rem;
+
+// 	@include breakpoint($tablet-break) { 
+// 		margin-top: 2rem;
+// 	}
+// }
+
+// .read-more:hover{
+// 	@include hover($blue); 
+// }
+
+// .welcome .read-more{
+
+// 	@include breakpoint($tablet-break) { 
+// 		margin-top: 2rem;
+// 	}
+// }
+
+// .read-more:hover{
+// 	@include hover($blue); 
+// }
+
+// .help{
+// 	position: absolute;
+// 	top: 1rem;
+// 	right:.5rem;
+// 	width: 60px;
+// 	font-size: .9rem;
+// }
+// .btn-info{
+// 	float:left;
+// 	width:20px;
+// 	height:20px;
+// 	margin-right: .25rem;
+// 	background-image: url(../img/info-sprites.svg);
+// 	background-repeat: no-repeat;
+// }
+
+
+
+
+

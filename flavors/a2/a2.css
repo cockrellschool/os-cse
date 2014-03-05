@@ -1,0 +1,25 @@
+/* Orange version */
+body, 
+body.navbar-off {
+  background: url('../../images/background-orange.png') no-repeat center top #f1e6d7;
+}
+.menu a {
+color: #555555;
+}
+.menu a.active, .menu a:hover.active, ul.nice-menu a.active, ul.nice-menu a:hover.active, .navigation ul.menu li ul.menu li a.active, .navigation ul li ul li a.active, .block-boxes-os_boxes_booktoc ul.menu li a.active {
+  background: #eeb111;
+  color: #fff;
+}
+.menu a:hover, 
+ul.nice-menu a:hover {
+  color:#007bc4;
+}
+.block-boxes-os_boxes_site_info h1 {
+  color: #cfab7a;
+}
+.block-boxes-os_boxes_site_info h1 a, .block-boxes-os_boxes_site_info h1 a:visited {
+	color: #cfab7a;
+  }
+#content-main .view-id-scholar_presentations .views-row a, #content-main #boxes-box-scholar_publications_recent .views-row a, #content-main .view-scholar-events-upcoming .views-row a {
+	color:#cfab7a;
+}

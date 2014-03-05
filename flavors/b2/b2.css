@@ -1,0 +1,38 @@
+/* Orange version */
+body {
+  background-image:none;
+  background: #dcd3bb;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: inset 0 80px 0 #df6f1d;
+  }
+
+body.navbar-off {
+  background-image:none;
+  background: #dcd3bb;
+  border-top: 10px solid #df6f1d;
+  }
+
+.menu a.active, .menu a:hover.active, ul.nice-menu a.active, ul.nice-menu a:hover.active, .navigation ul.menu li ul.menu li a.active, .navigation ul li ul li a.active, .block-boxes-os_boxes_booktoc ul.menu li a.active {
+  background: #cfab7a;
+  color: #fff;
+}
+ul.nice-menu a, .menu a {
+	color:#555555;
+}
+@media only screen and (max-width:320px) {
+#page {
+  margin-top: 50px;
+  position:relative;
+}
+}
+@media only screen and (max-width:600px) {
+}
+@media only screen and (min-width:600px) and (max-width:1025px) {
+}
+@media only screen and (min-width:1025px) {
+}
+
+.ut-logo {
+  background: url(../../images/utlogo_white.png) no-repeat;
+}
+

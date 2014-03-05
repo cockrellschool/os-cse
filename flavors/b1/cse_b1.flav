@@ -1,0 +1,5 @@
+name = Template B Blue
+description = An Blue Version of the Template B theme
+screenshot = screenshot.png
+
+css[] = b1.css
