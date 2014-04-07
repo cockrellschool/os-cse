@@ -1,0 +1,104 @@
+.cse-def {
+   background: url('../images/background-orange.png') no-repeat center top #f1e6d7 !important;
+   border-top:none !important;
+   font-family:$csebody;
+
+	p {
+   font-family:$csebody;
+	}
+	.view-os-websites .views-field-title span {
+		line-height:1.3em;
+	}
+	#page-wrapper {
+		background: #fff;
+		-webkit-box-shadow: $cse-box-shadow;
+		box-shadow: $cse-box-shadow;
+	}
+	.region-content-top .block-title {
+		font: normal normal 4.5em $cseheader;
+		margin-bottom:15px;
+	}
+	.region-content-top p {
+		font: normal normal 1.6em/1.8em $cseheader;
+	}
+	h1#page-title {
+		padding-top: 20px;
+		margin-bottom:1em !important;
+	}
+	h1 {
+		font-family:$cseheader;
+		font-weight:normal;
+		font-size:3em;
+	}
+	h2, .block-title {
+		font-family: $cseheader;
+		font-weight:normal;
+		font-size:2em;
+		margin-bottom: 1em;
+		text-transform: none;
+	}
+	h3, .node-title, .views-field-title {
+		font-family:$cseheader;
+		font-weight:normal !important;
+		font-size:1.1em;
+		text-transform: uppercase;
+		margin-bottom:1em;
+	}
+.content-left.content-right .at-panel .region.region-content-first {
+border-right: none;
+}
+	
+	// HEADER
+	
+	#header {
+	  font-family: $cseheader;
+	  font-weight: normal;
+	  background:none;
+	}
+	
+	#branding_header {
+	  -webkit-box-shadow: 2px 2px 7px 2px rgba(0,0,0,.2);
+	  box-shadow: 2px 2px 7px 2px rgba(0,0,0,.2);
+	  background:#df6f1d;
+	}
+	
+	// UT Logo
+	.region-branding-header .block-boxes:last-of-type {
+		width: 100px;
+		height: 50px;
+		float: right;
+		background-repeat: no-repeat;
+		display:none;
+	
+		@include breakpoint($tablet-break) {  
+			display: block;
+			/*background: url(../images/utlogo_white.png) no-repeat*/
+		}
+	}
+	// CSE Default Logo
+	.region-branding-header .block-boxes:first-of-type {
+		width: 270px;
+		height: 30px;
+		margin-top: 10px;
+		float: left;
+		background-repeat: no-repeat;
+		display:none;
+	
+		@include breakpoint($tablet-break) {  
+			display: block;
+			/*background: url(../images/cselogo-white.png) no-repeat*/
+		}
+	}
+	// footer
+	#footer{
+		background: #d0d0d1;
+		
+		-webkit-box-shadow: $cse-box-shadow;
+		box-shadow: $cse-box-shadow;
+	}
+
+	
+	
+	
+	
+}

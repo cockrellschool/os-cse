@@ -1,0 +1,114 @@
+.cse-def {
+	
+	
+
+.file-os-files-xxlarge {
+	padding-right:0;
+}
+.block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, div.messages {
+	margin:0;
+}
+.view-os-websites ul li.views-row {
+	width: 44%;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 40px;
+	margin-right:20px;
+}
+.view-os-websites .views-field-field-site-logo {
+	float: left;
+	margin-right: 15px;
+}
+.view-os-websites .views-field-title {
+	margin-bottom:5px;
+}
+.content-inner {
+	width:100%;
+	margin:0 !important;
+}
+.region-sidebar-first, .region-sidebar-second, .page-user #menu-bar, .region-header-third, #block-vsite-register-get-your-site-block {
+	display:none !important;
+}
+.region-inner {
+	padding-top:0;
+}
+#page {
+	margin-top:0;
+}
+#page-wrapper {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0;
+}
+#header-panels {
+padding-bottom: 0;
+border-bottom: none
+}
+#columns {
+padding: 20px 35px 35px;
+}
+.front .content-bottom {
+	margin-top:20px;
+	display:block;
+}
+.front .region-help {
+	display:none;
+}
+.menu-wrapper {
+	max-width: 880px;
+	margin: 0 auto;
+}
+#footer {
+	margin:0 auto;
+	max-width:940px;
+	@include breakpoint($mobile-break) {  
+		// margin: 0 20px;
+	}
+}
+#header-container .gpanel .region {
+	clear: none;
+	display: inline-block;
+	vertical-align: bottom;
+	width:100%;
+} 
+#header-container .region-inner {
+	padding-top:0;
+} 
+.branding-container {
+	max-width:960px;
+	padding:20px 20px 0;
+	margin:0 auto;
+}
+#header-container {
+	padding:0;
+}
+.header-left.header-main.header-right .region-header-first, .header-left.header-main .region-header-first {
+	margin-left: 0; 
+}
+#branding_header {
+	min-height:85px;
+	z-index: 2;
+	position: relative;
+	display:none;
+	@include breakpoint($tablet-break) {  
+		display:block;
+	}
+}
+.views-view-grid td {
+	text-align:center;
+	vertical-align:top;
+	padding:10px;
+}
+.front .views-view-grid td {
+	text-align:center;
+	vertical-align:top;
+	padding:20px;
+}
+
+.views-row, .view-id-os_image_gallery li.views-row {
+	margin-bottom: 3em;
+}
+	
+	
+	
+}
