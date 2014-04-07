@@ -188,17 +188,15 @@
 
   <div id="powerby-login">
   	<?php if (isset($login_link)) {
-    print render($login_link); 
-  } ?>
-  	
-    </div>
+    	print render($login_link); 
+  	} ?>
+  </div>
 
     <div class="cse"></div>
   </footer>
 
 
 </div><!--page area ends-->
-
 
 
 <div id="extradiv"></div>
@@ -236,7 +234,7 @@
 	$('.ut-logo').click(function(event) {
 		event.stopPropagation();
 		event.preventDefault();
-		window.open('http://www.utexas.edu');
+		window.location = 'http://www.utexas.edu';
 	});
 
 
@@ -248,18 +246,16 @@
 	var deptAddress = deptInfoObj.address;
 	var deptURL     = deptInfoObj.url;
 
-
 	$('.footer__dept a').attr('href', deptURL);
 	$('.footer__dept a').html(deptTitle);
 	$('.footer__dept-address').html(deptAddress);
-
 
 	$('#scholar-shield').css('cursor', 'pointer'); // move this to css
 
 	$('#scholar-shield').click(function(event) {
 		event.stopPropagation();
 		event.preventDefault();
-		window.open(deptURL);
+		window.location = deptURL;
 	});
 
 	function getDepartmentAddress(deptLogo) {
@@ -298,7 +294,7 @@
 			break;
 			case 'melogo':
 			case 'melogo_white':
-			deptObj.url = 'http://www.caee.utexas.edu';	
+			deptObj.url = 'http://www.me.utexas.edu';	
 			deptObj.title = 'Mechanical Engineering';
 			deptObj.address = '204 East Dean Keeton St., Engineering Training Center II (ETC), Stop C2200';
 			break;
