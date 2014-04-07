@@ -32,3 +32,10 @@
 	border-right: $amt solid $darkerColor;
 	border-bottom: $amt solid $darkerColor;
 }
+
+
+@mixin rounded($amt){
+	-webkit-border-radius: $amt;
+	-moz-border-radius: $amt;
+	border-radius: $amt;
+}
