@@ -210,8 +210,81 @@
 	     $('html, body').animate({
 	        scrollTop: $(".menu").offset().top
 	    }, 250);
+
         return false;
 	});
+
+	// Make UT logo link to UT Website
+	
+	$('.ut-logo').css('cursor', 'pointer'); // move this to css
+
+	$('.ut-logo').click(function(event) {
+		event.stopPropagation();
+		event.preventDefault();
+		window.open('http://www.utexas.edu');
+	});
+
+
+	// Make dept logos link to dept websites
+
+	var deptLogo = getImageName($('#scholar-shield img').attr('src'));
+	var deptAddress = getDepartmentAddress(deptLogo);
+
+	$('#scholar-shield').css('cursor', 'pointer'); // move this to css
+
+	$('#scholar-shield').click(function(event) {
+		event.stopPropagation();
+		event.preventDefault();
+		window.open(deptAddress);
+	});
+
+	function getDepartmentAddress(deptLogo) {
+		var url;
+	
+		switch(deptLogo){
+			case 'aelogo':
+			case 'aelogo_white':
+			url = 'http://www.ae.utexas.edu';
+			break;
+			case 'bmelogo':
+			case 'bmelogo_white':
+			url = 'http://www.bme.utexas.edu';
+			break;
+			case 'caeelogo':
+			case 'caeelogo_white':
+			url = 'http://www.caee.utexas.edu';
+			break;
+			case 'chelogo':
+			case 'chelogo_white':
+			url = 'http://www.che.utexas.edu';
+			break;
+			case 'ecelogo':
+			case 'ecelogo_white':
+			url = 'http://www.ece.utexas.edu';
+			break;
+			case 'melogo':
+			case 'melogo_white':
+			url = 'http://www.caee.utexas.edu';
+			break;
+			case 'pgelogo':
+			case 'pgelogo_white':
+			url = 'http://www.pge.utexas.edu';
+			default:
+			url = 'http://www.engr.utexas.edu';
+			break;
+		}
+
+		return url;
+	}
+
+	function getImageName (el) {
+		var imagePath = el.lastIndexOf("/") + 1;
+		var imageFile = el.substr(imagePath);
+		var imageName = imageFile.substr(0, imageFile.lastIndexOf('.')) || imageFile;
+
+		return imageName;
+	}
+
 
 })(jQuery);
 
