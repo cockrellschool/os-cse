@@ -170,7 +170,22 @@
 		
 		<!--footer region end-->
   <?php endif; ?>
-  <div id="powered-by"><a href="http://openscholar.harvard.edu">OpenScholar</a></div>
+ <!--  <div id="powered-by"><a href="http://openscholar.harvard.edu">OpenScholar</a></div> -->
+
+   <div class="cse-footer">
+  	 <p>© <?php echo date("Y") ?> 
+  	 	<span class="footer__dept"><a href="" target="_blank"></a></span> |
+  	 	<a href="http://www.engr.utexas.edu" target="_blank">Cockrell School of Engineering</a> <br>
+	  	<a href="http://www.utexas.edu" class="external" target="_blank">The University of Texas at Austin</a> <br>
+	  	<span class="footer__dept-address"></span> <br>
+	  	<span>Austin, Texas 78712</span> <a href="http://www.utexas.edu/maps/main/areas/engineering.html" target="_blank">[Map]</a><br>
+		<a href="http://www.utexas.edu/web-privacy-policy" class="external" target="_blank">UT Privacy Policy</a> | 
+		<a href="http://www.utexas.edu/web-accessibility-policy/" class="external" target="_blank">UT Resources for Accessibility</a><br>
+       <!--  Comments: <a href="mailto:webmaster@me.utexas.edu">webmaster@me.utexas.edu</a> -->
+    </p>
+  </div>
+
+
   <div id="powerby-login">
   	<?php if (isset($login_link)) {
     print render($login_link); 
@@ -227,54 +242,79 @@
 
 	// Make dept logos link to dept websites
 
-	var deptLogo = getImageName($('#scholar-shield img').attr('src'));
-	var deptAddress = getDepartmentAddress(deptLogo);
+	var deptLogo    = getImageName($('#scholar-shield img').attr('src'));
+	var deptInfoObj = getDepartmentAddress(deptLogo);
+	var deptTitle   = deptInfoObj.title;
+	var deptAddress = deptInfoObj.address;
+	var deptURL     = deptInfoObj.url;
+
+
+	$('.footer__dept a').attr('href', deptURL);
+	$('.footer__dept a').html(deptTitle);
+	$('.footer__dept-address').html(deptAddress);
+
 
 	$('#scholar-shield').css('cursor', 'pointer'); // move this to css
 
 	$('#scholar-shield').click(function(event) {
 		event.stopPropagation();
 		event.preventDefault();
-		window.open(deptAddress);
+		window.open(deptURL);
 	});
 
 	function getDepartmentAddress(deptLogo) {
-		var url;
+		var deptObj = {};
 	
 		switch(deptLogo){
 			case 'aelogo':
 			case 'aelogo_white':
-			url = 'http://www.ae.utexas.edu';
+			deptObj.url = 'http://www.ae.utexas.edu';
+			deptObj.title = 'Aerospace Engineering &amp; Engineering Mechanics';
+			deptObj.address = '210 East 24th St., W.R. Woolrich Laboratories (WRW), Stop C0600';
 			break;
 			case 'bmelogo':
 			case 'bmelogo_white':
-			url = 'http://www.bme.utexas.edu';
+			deptObj.url = 'http://www.bme.utexas.edu';
+			deptObj.title = 'Biomedical Engineering';
+			deptObj.address = '107 W. Dean Keeton St., Biomedical Engineering Building (BME), Stop C0800';
 			break;
 			case 'caeelogo':
 			case 'caeelogo_white':
-			url = 'http://www.caee.utexas.edu';
+			deptObj.url = 'http://www.caee.utexas.edu';
+			deptObj.title = 'Civil, Architectural &amp; Environmental Engineering';
+			deptObj.address = '301 E. Dean Keeton St., Ernest J. Cockrell Building (ECJ), Stop C1700';
 			break;
 			case 'chelogo':
 			case 'chelogo_white':
-			url = 'http://www.che.utexas.edu';
+			deptObj.url = 'http://www.che.utexas.edu';
+			deptObj.title = 'Chemical Engineering';
+			deptObj.address = '200 E. Dean Keeton St., Stop C0400';
 			break;
 			case 'ecelogo':
 			case 'ecelogo_white':
-			url = 'http://www.ece.utexas.edu';
+			deptObj.url = 'http://www.ece.utexas.edu';
+			deptObj.title = 'Electrical and Computer Engineering';
+			deptObj.address = '2501 Speedway St., Engineering Science Building (ENS)';
 			break;
 			case 'melogo':
 			case 'melogo_white':
-			url = 'http://www.caee.utexas.edu';
+			deptObj.url = 'http://www.caee.utexas.edu';	
+			deptObj.title = 'Mechanical Engineering';
+			deptObj.address = '204 East Dean Keeton St., Engineering Training Center II (ETC), Stop C2200';
 			break;
 			case 'pgelogo':
 			case 'pgelogo_white':
-			url = 'http://www.pge.utexas.edu';
+			deptObj.url = 'http://www.pge.utexas.edu';
+			deptObj.title = 'Petroleum &amp Geosystems Engineering';
+			deptObj.address = '200 E. Dean Keeton St., Stop C0300';
 			default:
-			url = 'http://www.engr.utexas.edu';
+			deptObj.url = 'http://www.engr.utexas.edu';
+			deptObj.title = '';
+			deptObj.address = '';
 			break;
 		}
 
-		return url;
+		return deptObj;
 	}
 
 	function getImageName (el) {

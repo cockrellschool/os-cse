@@ -18,20 +18,25 @@ em {
 body {
   color:#555555;
   font:62.5%/1.5em $basefont;
-  } 
+} 
 
 body, body.navbar-off {
    background: url("../images/background.jpg") no-repeat #e9e9e9;
 	border-top: 10px solid #007dc1;
-  }
+	padding-top:0 !important;
+}
+#tinymce {
+	border:none !important;
+	box-shadow:none!important;
+}
 .navbar-on {
 	 padding-top:0 !important;
  } 
 
-span{
-	font-size: .95rem;
-	line-height: 1.6em;
-}
+// span{
+// 	font-size: .95rem;
+// 	line-height: 1.6em;
+// }
 
 article,section p {
 	font-size: .95rem;
