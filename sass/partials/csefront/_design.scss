@@ -6,6 +6,9 @@
 	p {
    font-family:$csebody;
 	}
+	#footer .at-panel {
+		padding:1em;
+	}
 	.view-os-websites .views-field-title span {
 		line-height:1.3em;
 	}
@@ -19,7 +22,11 @@
 		margin-bottom:15px;
 	}
 	.region-content-top p {
-		font: normal normal 1.6em/1.8em $cseheader;
+		font: normal normal 1.4em/1.6em $cseheader;
+		@include breakpoint($tablet-break) {  
+			font-size: 1.6em;
+			line-height:1.8em;
+		}
 	}
 	h1#page-title {
 		padding-top: 20px;

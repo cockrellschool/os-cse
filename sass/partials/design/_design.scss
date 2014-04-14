@@ -25,9 +25,10 @@ body, body.navbar-off {
 	border-top: 10px solid #007dc1;
 	padding-top:0 !important;
 }
-#tinymce {
+#tinymce, .mceContentBody {
 	border:none !important;
 	box-shadow:none!important;
+	background:#fff;
 }
 .navbar-on {
 	 padding-top:0 !important;
@@ -87,6 +88,10 @@ article h2{
 	text-transform: uppercase;
 }
 
+.field-name-body ul {
+	padding-left:5px;
+}
+
 #page {
   	margin-top: 0px;
 	position: relative;
@@ -120,7 +125,8 @@ article h2{
 #main-content h1 { 
 	// margin-bottom: 1.5em;
 	// font-size: 1.75em;
-    line-height: 1.083em;
+    // line-height: 1.083em;
+	line-height: 1em;
 	font-family: $headerfont;
 	font-weight:normal;
 }
@@ -133,6 +139,14 @@ article h2{
 // hide datestamp
 article footer{
 	display: none;
+}
+
+//Media Gallery
+
+//hide created on
+
+.views-field-created {
+	display:none;
 }
 
 
