@@ -194,6 +194,11 @@ article footer{
 	font-family: $bodyfont;
 }
 
+.content-inner .boxes-box p {
+	line-height:1.5em;
+	font-size:1rem;
+}
+
 .views-field-media-gallery-description,  .views-field-title, .views-field-media-gallery-file {
 	margin-bottom:1em;	
 }
