@@ -26,9 +26,10 @@ body, body.navbar-off {
 	padding-top:0 !important;
 }
 #tinymce, .mceContentBody {
-	border:none !important;
+	border:0 !important;
 	box-shadow:none!important;
 	background:#fff;
+	background-image:none !important;
 }
 .navbar-on {
 	 padding-top:0 !important;
@@ -166,17 +167,19 @@ article footer{
 	margin-right: 1.5em;
 }
 
-#block-os-pages-main-content ul li{
-	margin-left: 1em;
+#block-os-pages-main-content ul li {
+	margin-left:1em;
+}
+#block-os-pages-main-content ul.contextual-links li {
+	margin-left: 0;
+}
+#block-os-pages-main-content ol li {
+	margin-left: 1.5em;
 }
 
 .page-node #content-column .content-inner {
 	padding: 0; 
 }
-
-
-
-
 
 .content-inner #content *, .node-bio p {
 	font-size: .95rem;
@@ -187,9 +190,6 @@ article footer{
 	font-family: $headerfont;
 	// font-size: 1.5em;
 }
-
-
-
 .content-inner p, .node-bio p {
 	font-family: $bodyfont;
 }
@@ -315,3 +315,6 @@ margin-top: .4em;
 
 
 
+.view-os-profiles .view-grouping-header {
+	display:none;
+}
