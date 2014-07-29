@@ -94,7 +94,6 @@ padding: 5px 35px 35px;
 	min-height:85px;
 	z-index: 2;
 	position: relative;
-	display:none;
 	@include breakpoint($tablet-break) {  
 		display:block;
 	}
